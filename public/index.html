@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guessing Game</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: darkcyan;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        input[type="text"] {
+            padding: 30px;
+            width: 25%;
+            height: 20px;
+            font-size: 30px;
+            margin-bottom: 20px;
+            ;
+        }
+
+        input[type="button"] {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        input[type="button"]:hover {
+
+            color: darkcyan;
+            background-color: white;
+            border-color: white;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            color: darkcyan;
+            background-color: white;
+            border-color: white;
+        }
+
+        .inputUser {
+            margin-bottom: 10px;
+        }
+
+        .resultRoom {
+            font-size: 30px;
+        }
+
+        .errGame{
+            font-size: 15px;
+        }
+
+        .guessResult{
+            font-size: 30px;
+        }
+
+        .answer{
+            font-size: 20px;
+        }
+
+        #winner{
+            font-size: 25px;
+        }
+
+        #gameO{
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Brand Guessing Game</h1>
+    <div class="Main" id="mainDiv">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="inputUser">
+            <h2>Enter A Username</h2>
+            <br>
+            <br>
+            <input type="text" name="username" id="user">
+            <br>
+            <br>
+            <input type="button" name="uButton" value="GET USERNAME" id="userB">
+        </div>
+        <div id="errorDiv"></div>
+
+    </div>
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
