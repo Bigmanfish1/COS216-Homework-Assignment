@@ -1,5 +1,5 @@
-const uA = "u22492616";
-const pA = "Juice@2004";
+const uA = process.env.DETAILUSERNAME;
+const pA = process.env.DETAILPASSWORD;
 
 var reqC = new XMLHttpRequest();
 
